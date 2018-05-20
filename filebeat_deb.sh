@@ -71,7 +71,7 @@ Architecture: all
 Essential: no
 Maintainer: Ondrej Fuchs
 Description: Package for filebeat run on Rpi
-  Package is make fot NSW run on Rpi" > ${PATH_TO_FILEBEAT}/DEBIAN/control
+  Package is make for NSW run on Zero" > ${PATH_TO_FILEBEAT}/DEBIAN/control
 
 echo "Files: *
 Copyright: Filebeat
@@ -102,5 +102,7 @@ sudo rm -r -f ${PATH_TO_FILEBEAT}
 sudo rm -r -f ${PATH_TO_WORK}
 
 mv  nsw-filebeat.deb ${PATH_TO_FILEBEAT_PACKAGE}/
+
+cp ${PATH_TO_PACKAGE}/nsw-filebeat.deb  /home/pc/Dropbox/DP/konfigurace/ansible/roles/filebeat/files/
 
               
