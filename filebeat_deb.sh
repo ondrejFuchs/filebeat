@@ -103,6 +103,7 @@ sudo rm -r -f ${PATH_TO_WORK}
 
 mv  nsw-filebeat.deb ${PATH_TO_FILEBEAT_PACKAGE}/
 
-cp ${PATH_TO_PACKAGE}/nsw-filebeat.deb  /home/pc/Dropbox/DP/konfigurace/ansible/roles/filebeat/files/
+cp ${PATH_TO_FILEBEAT_PACKAGE}/nsw-filebeat.deb  /home/pc/Dropbox/DP/konfigurace/ansible/roles/filebeat/files/
+
 
               
