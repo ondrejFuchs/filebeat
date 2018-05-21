@@ -82,8 +82,9 @@ All notable changes to this project will be documented in this file.
 " > ${PATH_TO_FILEBEAT}/DEBIAN/changelog
 
 echo "#!/bin/sh
+sudo systemctl daemon-reload
 sudo systemctl enable filebeat
-sudo service filebeat start
+#sudo systemctl start filebeat
 " > ${PATH_TO_FILEBEAT}/DEBIAN/postinst
 
 cd ${PATH_TO_FILEBEAT}
@@ -103,7 +104,7 @@ sudo rm -r -f ${PATH_TO_WORK}
 
 mv  nsw-filebeat.deb ${PATH_TO_FILEBEAT_PACKAGE}/
 
-cp ${PATH_TO_FILEBEAT_PACKAGE}/nsw-filebeat.deb  /home/pc/Dropbox/DP/konfigurace/ansible/roles/filebeat/files/
+#cp ${PATH_TO_FILEBEAT_PACKAGE}/nsw-filebeat.deb  /home/pc/Dropbox/DP/konfigurace/ansible/roles/filebeat/files/
 
 
               
